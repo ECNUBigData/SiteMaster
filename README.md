@@ -15,7 +15,7 @@
 [@hmengECNU](https://github.com/hmengECNU)、[@LingmiaoXD](https://github.com/LingmiaoXD) 、[@South133](https://github.com/South133)、[@Jacexm](https://github.com/Jacexm)
 
 ## 📚 项目介绍
-**智能选址大师SiteMaster**是一款智能选址对话模型，旨在协助用户精准而深入地确定最佳选址。利用广泛的背景知识，它能够评估用户输入，推荐合适的地址，并充分考虑每个位置周围复杂的实际情况。具备先进的文本处理、推理和检索能力，智能选址大师能够提供针对特定需求的细致建议，并将选址地点在地图上可视化。
+**智能选址大师SiteMaster**是一款智能选址对话模型，旨在协助用户精准而深入地确定最佳选址。利用广泛的背景知识，它能够评估用户输入，推荐合适的地址，并充分考虑每个位置周围复杂的实际情况。具备先进的文本处理、推理和检索能力，智能选址大师能够提供针对特定需求的细致建议。
 
 项目的简单介绍见Bilibili:[]()
 
@@ -114,12 +114,14 @@ xtuner convert merge $NAME_OR_PATH_TO_LLM $NAME_OR_PATH_TO_ADAPTER $SAVE_PATH --
 完整模型开源在ModelScope平台：[模型地址](https://www.modelscope.cn/models/ECNUBigDataLab/SiteMaster)
 
 ## 🔎 快速使用
-1.本地加载到网页
-```shell
+
+1. 本地加载到网页使用
+```
 streamlit run app.py --server.address 127.0.0.1 --server.port 6006
 ```
-2.OpenXLab
-我们的模型可以在OpenXLab平台上直接运行（），感谢OpenXLab对项目部署的算力支持。
+2. 我们的模型可以直接在OpenXLab平台上直接运行[项目链接]()，感谢OpenXLab对项目部署的算力支持！
+
+
 ## ✏️ 未来规划
 尽管智能选址大师SiteMaster目前已经投入使用，但我们意识到仍有一些问题需要解决，输出结果与预期可能不尽相符。例如，可能会出现回答不准确的情况，这显然不符合我们对于精准度的追求。为了提供更为精确的选址信息，我们打算在未来研究中引入更为丰富的语料库和多轮对话语料。此外，尽管我们已经整合了高德API，但其稳定性仍然有待提升。因此，我们致力于不断改进该模型，以确保其能够稳定输出选址位置及其地图，并增添更为丰富的细节信息，以满足用户的需求。
 
