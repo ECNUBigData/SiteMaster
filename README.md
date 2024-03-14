@@ -121,7 +121,8 @@ xtuner convert merge $NAME_OR_PATH_TO_LLM $NAME_OR_PATH_TO_ADAPTER $SAVE_PATH --
 ```
 streamlit run app.py --server.address 127.0.0.1 --server.port 6006
 ```
-2. SiteMaster-Lagent版本
+2. SiteMaster-Lagent版本  
+使用前安装Lagent、Streamlit包和基于ReAct框架的Agents方法，更换代码中的模型地址为下载到本地的模型地址。
 将项目branch切换至SiteMaster-Lagent框架，进入./lagent/examples
 ```
 streamlit run react_web_demo.py --server.address 127.0.0.1 --server.port 6006
