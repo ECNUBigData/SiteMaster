@@ -17,9 +17,9 @@
 ## 📚 项目介绍
 **智能选址大师SiteMaster**是一款智能选址对话模型，旨在协助用户精准而深入地确定最佳选址。利用广泛的背景知识，它能够评估用户输入，推荐合适的地址，并充分考虑每个位置周围复杂的实际情况。具备先进的文本处理、推理和检索能力，智能选址大师能够提供针对特定需求的细致建议。
 
-项目的简单介绍见Bilibili:[]()
+项目的简单介绍见Bilibili:[SiteMaster视频介绍](https://www.bilibili.com/video/BV1Uu4m1M7yR/?vd_source=9ba6740f3e4d1e639327243bdd72925d)
 
-项目的应用Demo见OpenXLab平台[]() 
+项目的应用Demo见OpenXLab平台[SiteMaster](https://openxlab.org.cn/models/detail/ECNUBigDataLab/SiteMaster) 
 
 **智能选址大师SiteMaster**目前处于初期阶段，虽然尚未完全成熟，但具备极高的探索潜力。我们诚邀您体验并提出宝贵建议，以帮助我们不断改进。期待您的参与🎉！
 
@@ -115,15 +115,23 @@ xtuner convert merge $NAME_OR_PATH_TO_LLM $NAME_OR_PATH_TO_ADAPTER $SAVE_PATH --
 
 ## 🔎 快速使用
 
-1. 本地加载到网页使用
+**智能选址大师SiteMaster**提供两种使用方式，除基本对话外，我们的工具亮点包括使用streamlit的map功能绘制地图，还可以通过Lagent调取地图插件，绘制选址地点，为用户提供可靠的空间信息。
+
+1. SiteMaster基础版本
 ```
 streamlit run app.py --server.address 127.0.0.1 --server.port 6006
 ```
-2. 我们的模型可以直接在OpenXLab平台上直接运行[项目链接]()，感谢OpenXLab对项目部署的算力支持！
+2. SiteMaster-Lagent版本  
+使用前安装Lagent、Streamlit包和基于ReAct框架的Agents方法，更换代码中的模型地址为下载到本地的模型地址。
+将项目branch切换至SiteMaster-Lagent框架，进入./lagent/examples
+```
+streamlit run react_web_demo.py --server.address 127.0.0.1 --server.port 6006
+```
+3. 我们的模型可以直接在OpenXLab平台上直接运行[项目链接](https://openxlab.org.cn/models/detail/ECNUBigDataLab/SiteMaster)，感谢OpenXLab对项目部署的算力支持！
 
 
 ## ✏️ 未来规划
-尽管智能选址大师SiteMaster目前已经投入使用，但我们意识到仍有一些问题需要解决，输出结果与预期可能不尽相符。例如，可能会出现回答不准确的情况，这显然不符合我们对于精准度的追求。为了提供更为精确的选址信息，我们打算在未来研究中引入更为丰富的语料库和多轮对话语料。此外，尽管我们已经整合了高德API，但其稳定性仍然有待提升。因此，我们致力于不断改进该模型，以确保其能够稳定输出选址位置及其地图，并增添更为丰富的细节信息，以满足用户的需求。
+尽管智能选址大师SiteMaster目前已经投入使用，但我们意识到仍有一些问题需要解决，输出结果与预期可能不尽相符。例如，可能会出现回答不准确的情况，这显然不符合我们对于精准度的追求。为了提供更为精确的选址信息，我们打算在未来研究中引入更为丰富的语料库和多轮对话语料。此外，尽管我们已经通过Lagent框架整合了高德API，但其稳定性仍然有待提升。因此，我们致力于不断改进该模型，以确保其能够稳定输出选址位置及其地图，并增添更为丰富的细节信息，以满足用户的需求。
 
 ## 📑 开源许可证
 该项目采用[Apache License 2.0 开源许可证](LICENSE.txt)
