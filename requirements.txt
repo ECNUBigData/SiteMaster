@@ -5,3 +5,6 @@ pandas
 numpy
 streamlit
 sentencepiece
+accelerate
+transformers_stream_generator
+tiktoken
