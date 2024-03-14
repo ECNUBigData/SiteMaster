@@ -4,3 +4,4 @@ transformers
 pandas
 numpy
 streamlit
+sentencepiece

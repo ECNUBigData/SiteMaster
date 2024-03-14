@@ -114,10 +114,12 @@ xtuner convert merge $NAME_OR_PATH_TO_LLM $NAME_OR_PATH_TO_ADAPTER $SAVE_PATH --
 完整模型开源在ModelScope平台：[模型地址](https://www.modelscope.cn/models/ECNUBigDataLab/SiteMaster)
 
 ## 🔎 快速使用
-
-
-
-
+1.本地加载到网页
+```shell
+streamlit run app.py --server.address 127.0.0.1 --server.port 6006
+```
+2.OpenXLab
+我们的模型可以在OpenXLab平台上直接运行（），感谢OpenXLab对项目部署的算力支持。
 ## ✏️ 未来规划
 尽管智能选址大师SiteMaster目前已经投入使用，但我们意识到仍有一些问题需要解决，输出结果与预期可能不尽相符。例如，可能会出现回答不准确的情况，这显然不符合我们对于精准度的追求。为了提供更为精确的选址信息，我们打算在未来研究中引入更为丰富的语料库和多轮对话语料。此外，尽管我们已经整合了高德API，但其稳定性仍然有待提升。因此，我们致力于不断改进该模型，以确保其能够稳定输出选址位置及其地图，并增添更为丰富的细节信息，以满足用户的需求。
 
