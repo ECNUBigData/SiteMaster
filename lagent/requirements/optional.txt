@@ -1,0 +1,4 @@
+lmdeploy
+streamlit
+torch
+transformers
