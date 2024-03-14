@@ -1,0 +1,6 @@
+modelscope
+torch
+transformers
+pandas
+numpy
+streamlit
